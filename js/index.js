@@ -40,5 +40,7 @@ document.addEventListener("mousedown", function (event) {
   document.body.style.backgroundColor = "white";
 });
 document.addEventListener("mouseup", function (event) {
-  document.body.style.backgroundColor = "black";
+  event.target.textContent = "Brrrrruuuuuuuuuhhhhhhh";
+  event.stopPropagation();
+  event.currentTarget.style.backgroundColor = "black";
 });
